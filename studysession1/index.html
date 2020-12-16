@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>
+        <div class="icon">
+            <img src="./images/logo.svg">
+        </div>
+        <div>
+            <p>Life starts with us</p>
+        </div>
+        <nav>
+            <div class="hamburger">
+                <img src="images/menu-hamburger.svg" onclick="openMenu()">
+
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="./images/illustration-1.svg">
+        </div>
+    </main>
+    <script>
+         function openMenu() {
+         
+         const mobilemenu=document.getElementById("menu");
+         if (mobilemenu.style.display === "block") {
+          
+           mobilemenu.style.display="none";
+          
+         } else {
+           mobilemenu.style.display="block";
+        
+         }
+       }
+    </script>
+</body>
+</html>
